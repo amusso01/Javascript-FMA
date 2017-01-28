@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*My Style*/
+@font-face {
+	font-family: myriad;
+	src: url(font/Myriad-Pro-Bold-SemiCondensed_31628.ttf)
+}
+
+html,body{
+	font-family: myriad,sans-serif;
+	background-color: #FFE7E5;
+	height:100%;	
+}
+
+.wrapper{
+	width: 98%;
+	margin: auto;
+	background-image: url(images/background.png);
+	background-repeat: no-repeat;
+	background-position:50% 15%;
+	background-color: #181818;
+	height: 100%;
+	margin-top: 0.5%;
+	border-radius: 3px;
+	height: auto;
+	min-height: 880px;
+}
+
+header{
+	border-bottom: 1px dotted #7F2D26;
+	padding-bottom: 2em;
+}
+header img{
+	float: left;
+	margin-left: 2.5%;
+}
+header h1{
+	font-size: 3em;
+	padding-top: 0.6em;
+	color: #7F2D26;
+}
+main{
+	position: relative;
+	top:2%;
+}
+#diabetes{
+	background-color:rgba(127,45,38,0.98);
+	padding: 1em;
+	border-radius: 10px;
+	width: 90%;
+	margin: auto;
+	margin-top: 5em;
+	box-shadow: 0px 0px 15px -6px rgba(127,45,38,0.73);
+}
+#q1{
+	margin-top: 2em;
+}
+fieldset{
+	margin-bottom: 2.5em;
+	width: 100%;	
+}
+legend{
+	margin-bottom: 1.2em;
+	width:20%;
+	font-size: 1.1em;
+	float: left;
+}
+ul{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+/*backup property in case flexbox not supported*/
+ul li{
+	display: inline-block;
+	padding-left: 25px;
+	
+}
+.hiden{
+	display: none;
+}
+.displayResult{
+	display: block;
+	background-color: #FFA399;
+	padding: 1em;
+	width:90%;
+	margin: auto;
+	margin-top: 1.5em;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px -6px rgba(165,41,31,0.73);
+}
+ul li label[for="fstory2"]{
+	margin-left: -30px;
+}
+ul li label[for="fstory1"]{
+	margin-left: 20px;
+}
+ul li label[for="diet1"]{
+	margin-left: -5px;
+}
+ul li label[for="diet3"]{
+	margin-left: -10px;	
+}
+label{
+	font-family: arial,verdana,sans-serif;
+	font-weight: bold;
+}
+#diabetes li:hover{
+	text-decoration: underline;
+}
+#diabetes label:hover, #diabetes input:hover{
+	cursor: pointer;
+	
+}
+#calculate{
+	position: relative;
+	top:-30px;
+	left: 30px;
+	border-radius: 5px;
+	padding: 0.3em;
+	background-color: #FFA399;
+	font-weight: bold;
+	border: 1px solid  #000000;
+}
+#link{
+	color: #000000;
+	
+}
+#message p{
+	margin:1em 0 1em 0;
+	font-family: arial,verdana,sans-serif;
+	line-height: 1.3em;
+}
+footer{
+	height: 1%;
+	background-color: #FFE7E5;
+	width:98%;
+}
+/*Contact form layout*/
+#image{
+	z-index: -1;
+	height:100%;
+	background-image: url(images/hands.jpg);
+	background-repeat: no-repeat;
+	background-color: grey;
+	background-blend-mode:luminosity;
+	overflow:auto;
+}
+#wrapper{
+	z-index: 1;
+	width: 95%;
+	margin: auto;
+	height: 120%;
+	background: linear-gradient(to top, rgba(1,0,0,0.1), rgba(2,0,0,1));
+	
+}
+#contactForm{
+	padding: 1em;
+	
+}
+#contactForm fieldset{
+	position: relative;
+	left: 33%;
+	background-color: rgba(127,45,38,0.7);
+	width: 22em;
+	text-align: center;
+	border-radius: 4px;
+	padding: 0.9em;
+}
+#contactForm label{
+	display: block;
+	text-align: left;
+	margin-right: 50px;
+	padding-bottom: 0.7em;
+	color: #ffffff;
+	width: 60%
+
+}
+#contactForm input, select{
+	border-radius: 4px;
+	width: 20em;
+	padding: 0.5em;
+	background-color: rgba(255,231,229,0.7);
+}
+
+#contactForm input[type="submit"]{
+	padding: 1em;
+	background:  #FFA399;
+	font-family: myriad;
+	float: left;
+	margin-top: 10em;
+	position: relative;
+	left: 8%;
+	width: 10em;
+	border: 1px solid  #000000;
+}
+#contactForm #left{
+	float: left;
+	position: relative;
+	z-index: 3;
+	width: 25%;
+}
+#right{
+	width: 25%;
+	display: inline;
+	position: relative;
+	z-index: 2;
+}
+.donotdisplay{
+	display: none;
+}
+#contactForm .messageSubmit{
+	text-align: center;
+	font-size: 0.9em;
+	padding-bottom: 0.5em;
+	color: #FF4531;
+	font-family: arial,sans-serif;
+}
+#contactForm span{
+	display: none;
+}
+#contactForm .required{
+	border-color: red;
+	font-family: arial,verdana,sans-serif;
+	display: inline-block;
+	color:#FF4531;
+	margin-top: 0.4em;
+	font-size: 0.9em;
+}
+.placeholder{
+	color: #685E5D;
+}
+.text{
+	color: #000000;
+	font-style: normal;
+}
+#tooltip{
+	position: relative;
+	right: 5%;
+	top: 8px;
+	
+	
+}
+#bgtooltip{
+	display: none;
+	position: absolute;
+	right: 95%;
+	top:25px;
+	width:160px;
+	padding: 10px 10px 35px 15px;
+	background-image: url(images/bgTool-01.png);
+	background-repeat: no-repeat;
+}
+#bgtooltip p{
+	line-height: 22px;
+	padding-right: 15px;
+	margin-left: -20px;
+}
+.clearfix{
+	clear: both;
+}
+/*responsive*/
+@media(min-width:1700px){
+	#contactForm #right{
+		position: relative;
+		right: 10%;
+	}
+}
+@media (max-width:1100px){
+	#contactForm #left{
+		float:none;
+		padding-left: 0em;
+		width: inherit;
+	}
+	#contactForm input[type="submit"]{
+		float: none;
+		margin-top: 1em;
+	}
+}
+@media (max-width:750px){
+	#contactForm fieldset{
+		left:6%;
+	}
+	header img{
+		margin-left: 0%;
+	}
+	#bgtooltip{
+		background-image: url(images/bgTool-02-01-01.png);
+		left: 49px;
+	}
+	#bgtooltip p{
+		margin-left: -4px;
+		padding-left: 1px;
+		margin-top: -12px;
+	}
+}
+@media (max-width:450px){
+	#contactForm fieldset{
+		width: 13em;
+		margin-left: 1.8em;
+	}
+	#contactForm input, select{
+		width: 13em;
+		float: left;
+	}
+	header img{
+		float: none;
+		position: relative;
+		left: 15%;
+		margin-left: 2.5%;
+		
+	}
+	#tooltip{
+		float: right;
+		position: absolute;
+		
+	}
+	#bgtooltip{
+		background-image: url(images/bgTool-01.png);
+		top: -20px;
+		left: 19px;
+		
+	}
+	header h1{
+		text-align: center;
+	}
+}

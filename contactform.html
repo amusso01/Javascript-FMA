@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="diabetstool.css">
+	<title>ZHA Contact form</title>
+</head>
+<body>
+	<div id="image">
+		
+		<div id="wrapper">
+			<header>
+				<a href="#"><img src="images/zhaLogo.png" alt="ZHA logo"></a>
+				<h1>Contact Us</h1>
+			</header>
+			<main >
+				<form action="http://titan.dcs.bbk.ac.uk/~ubseaxt/process.php" method="post" id="contactForm">
+					<div id="left">
+						
+						<fieldset id="fname_field">
+							<label for="fname">First Name*</label>
+							<p class="donotdisplay" id="fnameMessage">Check the First name</p>
+							<input type="text" id="fname" name="fname"> <span class="error">first name</span>
+						</fieldset>
+
+						<fieldset id="sname_field">
+							<label for="sname">Last Name*</label>
+							<p class="donotdisplay" id="snameMessage">Check the Surname</p>
+							<input type="text" id="sname" name="sname"> <span class="error">surname</span>
+						</fieldset>
+
+						<fieldset id="title_field">
+							<label for="title">Title*</label>
+							<p class="donotdisplay" id="titleMessage">Select a Title</p>
+							<select name="title" id="title">
+								<option value="-1">Please select your Title</option>
+								<option value="mr">Mr.</option>
+								<option value="ms">Ms.</option>
+								<option value="mrs">Mrs</option>
+								<option value="miss">Miss</option>
+								<option value="master">Master</option>
+							</select> <span class="error">title</span>
+						</fieldset>
+					</div>
+					<div id="right">
+
+						<fieldset id="han_field">
+							<label for="han">Health Authority Number*</label>
+							<p class="donotdisplay" id="hanMessage">Check the H.A.N.</p>
+							<div id="bgtooltip"><p>If you don't know your ZHA number, please contact your GP</p></div>
+
+							<img class="clearfix" id="tooltip" src="images/question-mark-icon.png" alt="tooltip">
+							<input  type="text" id="han" name="han"> <span class="error">HAN</span>
+						</fieldset>
+
+						<fieldset id="email_field">
+							<label for="email">Email*</label>
+							<p class="donotdisplay" id="emailMessage">Check the Email</p>
+							<input type="text" id="email" name="email"> <span class="error">Email</span>
+						</fieldset>
+
+						<fieldset id="tnumber_field">
+							<label for="tnumber">Telephone Number</label>
+							<p class="donotdisplay" id="tnumberMessage">Enter a valid Telephone number</p>
+							<input type="text" id="tnumber" name="tnumber"><span class="error">telephone number</span>
+						</fieldset>
+					</div>
+						<input class="clearfix" id="submit" type="submit" name="submit" value="Submit Form">
+				</form>
+
+			</main>
+
+		</div>
+	</div>
+<script src="contactform.js"></script>
+</body>
+</html>

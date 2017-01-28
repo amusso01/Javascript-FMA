@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="diabetstool.css">
+	<title>ZHA diabetes tool</title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<header>
+			<a href="#"><img src="images/zhaLogo.png" alt="ZHA logo"></a>
+			<h1>Diabetes Risk Assesment Tool</h1>
+		</header>
+		<main >
+			<form id="diabetes" method="post" action="#" >
+				<fieldset id="q1">
+					<legend>How old are you?</legend>
+					
+						
+					<ul>
+						<li>
+							<label for="age1">1-25</label>
+							<input type="radio" name="age" id="age1" value="0">
+							
+						</li>
+						<li>
+							<label for="age2">26-40</label>
+							<input type="radio" name="age" id="age2" value="5">
+							
+						</li>
+						<li>
+							<label for="age3">41-60</label>
+							<input type="radio" name="age" id="age3" value="8">
+							
+						</li>
+						<li>
+							<label for="age4">60+</label>
+							<input type="radio" name="age" id="age4" value="10">
+							
+						</li>
+					</ul>
+					
+				</fieldset>
+				<fieldset id="q2">
+					<legend>What is your BMI?</legend>
+					<ul>
+						<li>
+							<label for="bmi1">0-25</label>
+							<input type="radio" name="bmi" id="bmi1" value="0">
+							
+						</li>
+						<li>
+							<label for="bmi2">26-30</label>
+							<input type="radio" name="bmi" id="bmi2" value="0">
+							
+						</li>
+						<li>
+							<label for="bmi3">31-35</label>
+							<input type="radio" name="bmi" id="bmi3" value="9">
+							
+						</li>
+						<li>
+							<label for="bmi4">35+</label>
+							<input type="radio" name="bmi" id="bmi4" value="10">
+							
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset id="q3">
+					<legend>Does anybody in your family have diabetes?</legend>
+					<ul>
+						<li>
+							<label for="fstory1">No</label>
+							<input type="radio" name="fstory" id="fstory1" value="0">
+
+						</li>
+						<li>
+							<label for="fstory2">Grandparent</label>
+							<input type="radio" name="fstory" id="fstory2" value="7">
+
+						</li>
+						<li>
+							<label for="fstory3">Sibling</label>
+							<input type="radio" name="fstory" id="fstory3" value="15">
+
+						</li>
+						<li>
+							<label for="fstory4">Parent</label>
+							<input type="radio" name="fstory" id="fstory4" value="15">
+
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset id="q4">
+					<legend>How would you describe your diet?</legend>
+					<ul>
+						<li>
+							<label for="diet1">Low sugar</label>
+							<input type="radio" name="diet" id="diet1" value="0">
+							
+						</li>
+						<li>
+							<label for="diet2">Normal sugar</label>
+							<input type="radio" name="diet" id="diet2" value="0">
+							
+						</li>
+						<li>
+							<label for="diet3">Quiet high sugar</label>
+							<input type="radio" name="diet" id="diet3" value="7">
+							
+						</li>
+						<li>
+							<label for="diet4">High sugar</label>
+							<input type="radio" name="diet" id="diet4" value="10">
+							
+						</li>
+					</ul>
+				</fieldset>
+				<button type="button" name="calculate" id="calculate" >CALCULATE</button>
+			</form>
+		</main>
+		<aside  class="hiden" id="message" >
+			<h2></h2>
+			<p id="risk"><a id="link"></a></p>
+		</aside>
+	</div>
+	<footer>
+		
+	</footer>
+<script src="diabetstool.js"></script>
+</body>
+</html>
