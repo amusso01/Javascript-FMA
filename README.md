@@ -5,4 +5,4 @@ The brief required to develop a basic diabetes tool calculator, in case of high 
 the user will be redirect to contact form page, which has been developed to perform 
 a Client side validation using vanilla javascript.
 
-http://titan.dcs.bbk.ac.uk/~amusso01/javascript/diabetestool.html
+http://titan.dcs.bbk.ac.uk/~amusso01
